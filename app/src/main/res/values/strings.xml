@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">alarm2</string>
+    <string name="time">10:00 AM</string>
+    <string name="date">Mon, Fri</string>
+</resources>

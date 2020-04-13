@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_alarm"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        />
+
+    <TimePicker
+        android:id="@+id/tp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:timePickerMode="spinner"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeat"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp">
+
+        <CheckBox
+            android:button="@null"
+            android:id="@+id/mon"
+            android:onClick="onCheckBoxChecked"
+            android:background="@drawable/checkbox_selection"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="Mon"
+            android:gravity="center"
+            android:layout_marginRight="5dp"/>
+
+        <CheckBox
+            android:button="@null"
+            android:id="@+id/tue"
+            android:onClick="onCheckBoxChecked"
+            android:background="@drawable/checkbox_selection"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="Tue"
+            android:gravity="center"
+            android:layout_marginRight="5dp"/>
+
+        <CheckBox
+            android:button="@null"
+            android:id="@+id/wed"
+            android:onClick="onCheckBoxChecked"
+            android:background="@drawable/checkbox_selection"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="Wed"
+            android:gravity="center"
+            android:layout_marginRight="5dp"/>
+
+        <CheckBox
+            android:button="@null"
+            android:id="@+id/thurs"
+            android:onClick="onCheckBoxChecked"
+            android:background="@drawable/checkbox_selection"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="Thu"
+            android:gravity="center"
+            android:layout_marginRight="5dp"/>
+
+        <CheckBox
+            android:button="@null"
+            android:id="@+id/fri"
+            android:onClick="onCheckBoxChecked"
+            android:background="@drawable/checkbox_selection"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="Fri"
+            android:gravity="center"
+            android:layout_marginRight="5dp"/>
+
+        <CheckBox
+            android:button="@null"
+            android:id="@+id/sat"
+            android:onClick="onCheckBoxChecked"
+            android:background="@drawable/checkbox_selection"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="Sat"
+            android:gravity="center"
+            android:layout_marginRight="5dp"/>
+
+        <CheckBox
+            android:button="@null"
+            android:id="@+id/sun"
+            android:onClick="onCheckBoxChecked"
+            android:background="@drawable/checkbox_selection"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:text="Sun"
+            android:gravity="center"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Set Alarm"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/alarmbox"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+
+        />
+
+</LinearLayout>
